@@ -25,7 +25,9 @@
       "Bash(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Sekhons\\\\Data Engineering - Copy\\\\Data-Engineering\\\\get_nifi_creds6.ps1\")",
       "Bash(powershell -NoProfile -ExecutionPolicy Bypass -Command \"Start-Process ''https://localhost:8443/nifi''\")",
       "Bash(powershell -NoProfile -ExecutionPolicy Bypass -Command \"Start-Service -Name MongoDB -ErrorAction SilentlyContinue; Get-Service | Where-Object { $_DisplayName -like ''*mongo*'' -or $_Name -like ''*mongo*'' } | Select-Object Status, Name, DisplayName\")",
-      "Bash(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Sekhons\\\\Data Engineering - Copy\\\\Data-Engineering\\\\start_mongo.ps1\")"
+      "Bash(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Sekhons\\\\Data Engineering - Copy\\\\Data-Engineering\\\\start_mongo.ps1\")",
+      "Bash(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Sekhons\\\\Data Engineering - Copy\\\\Data-Engineering\\\\find_mongo.ps1\")",
+      "Bash(python -c \":*)"
     ]
   }
 }
