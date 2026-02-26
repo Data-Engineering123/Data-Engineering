@@ -1,0 +1,602 @@
+   
+ASSESSMENT BRIEF (COURSEWORK 1)   
+Programme    
+ BSc Computer Science/ BEng Software Engineering   
+Module Title    
+ Data Engineering   
+Module Code    
+ CMP-X304-0   
+Module Level    
+ 6   
+Assessment Type(s)    
+Report and 
+Demo (both 
+mandatory to 
+pass)   
+Word Length / Duration    
+ 1500 words   %  
+contribution  
+to
+module mark    
+ 
+ 50%   
+Deadline (date & time) for   
+Submission    
+ 6/03/2026   
+Format/Location of 
+submission    
+PDF/ Moodle   
+Assessment Feedback date:    
+3 weeks after 
+the demo   
+    
+    
+Learning Outcomes    
+This assessment has been designed to provide you 
+with 
+an 
+opportunity 
+to 
+demonstrate 
+your 
+achievement of the learning outcomes listed below.  
+By successfully completing this assessment, you will 
+be able…    
+LO1: 
+Evaluate 
+concurrency 
+and 
+parallelism 
+approaches to support data engineering solutions.   
+LO2: Evaluate simple strategies for executing a 
+distributed query to select the strategy that 
+minimizes the amount of data transfer.   
+LO3: Identify appropriate transaction boundaries in 
+application programs.   
+LO4: Evaluate the time to retrieve information, 
+when indices are used compared to when they are not 
+used.   
+LO5: Analyse the requirements for building a data 
+delivery pipeline.   
+Employability and Professional Skills     
+This assessment has been designed to   
+provide you with an opportunity to 
+demonstrate your achievement of the  
+following skill(s) which is(are) critical in   
+ 
+professional context and jobs.   
+1. 
+Build and manage end-to-end data  
+pipelines   
+Demonstrate the ability to collect, store,   
+process, and retrieve data using industry  
+standard tools such as Python, MySQL, 
+Apache NiFi, and MongoDB.   
+2. 
+Apply analytical and 
+problemsolving   
+  
+ 
+skills   
+  
+Design solutions, debug issues, optimise 
+code, and evaluate the effectiveness of    
+SQL and NoSQL data storage approaches.   
+3. 
+Communicate technical decisions  
+clearly   
+ 
+LO6: Work as a member of a development team 
+recognising the different roles within a team and 
+different ways of organising teams.   
+Produce well-structured documentation, 
+explain your rationale, and present your 
+work effectively through written reports and 
+demonstrations.   
+4. Demonstrate teamwork and 
+professional practice   
+Participate in group-based demos, manage 
+tasks responsibly, and reflect workplace 
+collaboration and organisational skills.   
+   
+Assessment Requirements   
+   
+The final mark will come from two components (Both components are mandatory to pass this 
+assignment)   
+1. Submission through Moodle.   
+2. Demonstration.   
+Everything must be submitted within the due date to be considered for a complete submission for 
+this assessment. This assignment is GROUP-BASED and only one member of the group will 
+upload the document.  Demonstration will only be held after the work has been submitted 
+through the specified link on Moodle. Each group must consist of exactly four (4) students. and 
+all four members must contribute to the completion of all tasks (Tasks 1–4).  Task allocation 
+and internal coordination are the responsibility of the group.   
+   
+Case Study: “TechReads Retail Analytics”   
+TechReads is a mid-sized UK company specialising in online sales analytics for technical books. 
+Their clients include publishers, bookstores, and universities. TechReads is currently facing 
+challenges because their data ingestion process is manual, inconsistent, and slow. They want to 
+automate the entire pipeline—from data collection to storage, querying, and analytics.   
+You have been hired as a Junior Data Engineer in their Data Engineering Team. Your first project 
+involves designing a complete data pipeline that will:   
+• 
+Scrape product information from public e-commerce websites.   
+• 
+Store and query the extracted data in a MySQL relational database.   
+• 
+Automate scheduled data ingestion using Apache NiFi.   
+• 
+Integrate MongoDB as a secondary NoSQL store for semi-structured analytics.   
+The company expects you to deliver a fully functioning prototype so they can evaluate your 
+technical capabilities.   
+ 
+Project Background   
+TechReads wants to analyse trends in Data Engineering books sold online—pricing, authors, star 
+ratings, and release years. Their goal is to supply publishers with insights such as:   
+• 
+Which books are trending?   
+• 
+Which authors consistently receive high ratings?   
+• 
+How pricing varies across platforms.   
+To support this, they need a reliable and automated solution.   
+Your tasks as part of the TechReads Data Engineering Team are outlined below.   
+   
+Task 1: Web Scraping    
+TechReads wants an automated script to collect book information daily.   
+Your role: Build a Python web scraper that extracts at least 15 Data Engineering books from an 
+e-commerce site.   
+At least FIVE (5) Data fields required (Preferable as below, but may vary):   
+• 
+Title   
+• 
+Author(s)   
+• 
+Year of publication   
+• 
+Star rating   
+• 
+Price   
+You must:   
+• 
+Download webpage(s) using the Requests library.   
+• 
+Parse HTML using BeautifulSoup.   
+• 
+Structure your extracted data using Pandas.   
+• 
+Save the extracted data into a CSV file named techreads_books.csv.   
+In your report, discuss about your code and rationale behind it within 200 - 250 words for the task. 
+You must provide the screenshots of each operation/execution of the code created by you with 
+proper commenting.   
+Task 2: MySQL Database Pipeline    
+TechReads uses MySQL for its structured analytics dashboards.   
+Your role:   
+• 
+Install and configure MySQL locally.   
+• 
+Create a database called techreads_db.   
+• 
+Import your CSV file into a MySQL table.   
+• 
+Create a schema diagram (draw.io) representing your table.   
+ 
+ 
+• 
+Run a SQL query that extracts three selected columns, then sort results by any one 
+column (e.g., price or rating).   
+In your report, discuss about your code and rationale behind it within 200 - 250 words for the task. 
+You must provide the screenshots of each operation/execution of the code created by you with 
+proper commenting.   
+Task 3: Apache NiFi Dataflow Automation    
+TechReads wants to automate ingestion so that teams don’t run scripts manually.   
+Your role:   
+• 
+Create an Apache NiFi dataflow under a folder named “DataEngineering”.   
+• 
+Configure NiFi to pull book data from your MySQL database, transform it if needed, and 
+save it to a local directory in a structured format (CSV, JSON, or Avro).   
+• 
+Upload a video of the actual steps performed for carrying out the task (with voiceover 
+and camera ON)   
+Task 4: MongoDB Integration & Performance Comparison    
+TechReads is exploring NoSQL databases to support flexible and scalable catalog analytics.   
+Your role:   
+• 
+Convert your scraped data into JSON format.   
+• 
+Insert the JSON dataset into a MongoDB database.   
+• 
+Run a MongoDB query to filter books by attributes such as: o   
+price, o  
+ 
+publication year, o   
+rating thresholds.   
+• 
+Compare query performance between MySQL (SQL) and MongoDB (NoSQL) using 
+similar query logic.   
+In your report, compare SQL database and NoSQL database and compare the query execution time 
+for both the databases (within 200 - 250 words). You must provide the screenshots.   
+SUBMISSION REQUIREMENTS:   
+• 
+The cover page of the report must clearly list the names and student IDs of all four 
+group members.   
+• 
+Task 3 (Apache NiFi Video): o   
+Only one group member is required to record the 
+NiFi demonstration video.   
+o The video must include voiceover and camera ON while explaining 
+the steps performed.   
+• 
+The report must also include reflection (Approx. 750 words) (strictly your own 
+reflection, not generated using any AI tool) discussing:   
+o Each members specific contribution to the group work, o  What they 
+learnt from the task, o   
+Challenges faced and how they were 
+addressed.   
+ 
+• 
+All submissions must adhere strictly to the stated formatting, word limits, referencing 
+style (IEEE), and file-naming conventions.   
+Your report should contain:   
+The report should use 12-point font in Times New Roman, 1-inch margins, and double-spaced. The 
+report should be properly paged, paragraphed, and sectioned, and must include the following 
+sections in order in a (.pdf) file.   
+• 
+Cover Page with names of all the members • Table of Content   
+• 
+Tasks:   
+                  Task 1: Discussion along with Necessary Screenshot(s)   
+  
+   
+Task 2: Discussion along with Necessary Screenshot(s)   
+  
+   
+Task 3: Video Upload    
+  
+   
+Task 4: Discussion along with Necessary Screenshot(s)     
+• 
+Individual Reflection   
+ References: Referencing any point in your discussion section(s). If you have used ideas from 
+anywhere other than the lecture notes and tutorial examples (e.g., from a book, the Internet, or a 
+fellow student) then include a reference showing where the code or ideas came from and label your 
+code carefully to show which parts are your and which parts are borrowed.   
+Supporting File:   
+The supporting file you submit with your report should be an interactive python file (.ipynb 
+format), containing code you implemented with proper comments.   
+Marking Criteria   
+Total Marks: 100   
+Task / Criteria   Outstanding   
+Excellent   
+Good   
+Fair   
+Poor   
+Task 1: Web   
+Scraping & Data  
+Extraction   
+  
+Robust, accurate, 
+and  
+wellstructured 
+scraping solution. 
+All required 
+fields extracted 
+correctly. Clear 
+evidence of 
+independent 
+problem-solving 
+and critical 
+justification.   
+Strong scraping 
+solution with 
+minor 
+limitations. 
+Data mostly 
+accurate and 
+well-structured 
+with clear 
+reasoning.   
+Functional 
+scraping 
+solution with 
+acceptable data 
+quality.   
+Limited depth 
+of justification.  
+Basic or fragile 
+scraping 
+approach with 
+missing or 
+inconsistent 
+data. Minimal 
+justification.   
+Incomplete, 
+incorrect, or 
+nonfunctional 
+scraping solution.  
+   
+20 marks   
+17 marks   
+14 marks   
+10 marks   
+5 marks   
+Task 2: MySQL   
+Database Design   
+& Querying   
+Well-designed 
+relational schema 
+with appropriate 
+data types and 
+constraints. 
+Efficient SQL 
+queries with   
+Sound schema 
+design and 
+correct queries 
+with good 
+justification.  
+Minor  
+inefficiencies 
+present.   
+Adequate schema 
+and queries but 
+limited 
+optimisation or 
+justification.   
+Basic schema 
+with  
+design 
+flaws  
+or 
+partially correct 
+queries.   
+Incorrect or missing 
+database setup 
+and/or queries.   
+ 
+  
+strong analytical 
+justification.   
+  
+  
+  
+ 
+   
+20 marks   
+17 marks   
+14 marks   
+10 marks   
+5 marks   
+Task 3: Apache   
+NiFi   
+Automation   
+(Video)   
+Fully functional 
+and wellorganised 
+NiFi workflow. 
+Clear and 
+confident 
+explanation of 
+processors, data 
+flow, and design 
+decisions.   
+Functional  
+workflow with 
+clear 
+explanation. 
+Minor 
+omissions in 
+depth or clarity.  
+Basic working 
+flow with 
+limited 
+explanation of 
+design 
+decisions.   
+Partially 
+working flow or 
+unclear 
+demonstration.   
+Non-functional 
+or missing NiFi 
+workflow/video.   
+   
+10 marks   
+8 marks   
+6 marks   
+4 marks   
+2 marks   
+Task 4:   
+MongoDB   
+Integration &   
+SQL vs NoSQL   
+Analysis   
+Accurate JSON 
+conversion and  
+MongoDB  
+integration. 
+Queries correct 
+and meaningful. 
+Critical, 
+wellstructured  
+SQL 
+vs  
+NoSQL  
+comparison 
+applied to the 
+scenario.   
+Correct   
+MongoDB   
+integration with 
+a clear and 
+relevant 
+comparison. 
+Some critical 
+insight 
+demonstrated.   
+Functional   
+MongoDB   
+usage with a 
+descriptive but 
+limited 
+comparison.   
+Basic   
+MongoDB task 
+with superficial 
+or weak 
+comparison.   
+MongoDB task 
+incomplete or 
+comparison 
+absent/incorrect.   
+   
+20 marks   
+17 marks   
+14 marks   
+10 marks   
+5 marks   
+Individual   
+Reflection,   
+Technical   
+Understanding   
+& Professional 
+Communication 
+during 
+demonstration   
+Demonstrates 
+comprehensive 
+understanding of 
+the full pipeline. 
+Clearly explains 
+own contribution 
+with strong 
+technical 
+justification.   
+Communicates 
+confidently, 
+responds 
+accurately to 
+questions, and 
+shows high 
+professionalism 
+and engagement.   
+Demonstrates 
+strong 
+understanding 
+of the pipeline 
+and own role. 
+Clear 
+explanations 
+with good 
+justification. 
+Responds well 
+to most 
+questions and 
+maintains 
+professional 
+engagement.   
+Shows 
+reasonable 
+understanding 
+of own task 
+and its place in 
+the 
+pipeline. 
+Provides 
+adequate 
+explanation 
+with 
+limited 
+depth. 
+Answers basic 
+questions 
+competently.   
+Limited 
+understanding 
+of pipeline and 
+own role. 
+Explanations 
+lack clarity or 
+depth. Struggles  
+to justify 
+decisions or 
+answer 
+questions 
+effectively.   
+Demonstrates  
+little or no 
+understanding. 
+Unable to explain 
+contribution or 
+respond 
+meaningfully to 
+questions. 
+Limited or no 
+engagement.   
+   
+30 marks   
+25 marks   
+20 marks   
+15 marks   
+9 marks   
+   
+Assessment Success Guidance   
+To achieve high marks, students should demonstrate more than basic task completion. Strong 
+submissions will show:   
+• 
+Robust technical implementation – A fully functional end-to-end pipeline (Scraping → 
+MySQL → NiFi → MongoDB) with accurate and well-structured outputs.   
+• 
+Clear justification of decisions – Explain why specific tools, schema designs, and database 
+approaches were chosen.   
+ 
+•  Critical comparison – Provide thoughtful analysis of SQL vs NoSQL in terms of 
+performance, scalability, and suitability for the scenario.   
+•  Clean and professional presentation – Well-commented code, organised screenshots, clear 
+diagrams, and a structured report.   
+•  Independent initiative – Evidence of deeper exploration (e.g., indexing, performance 
+measurement, improved data handling).   
+•  Confident demo performance – Clear explanation of individual contribution and ability to 
+answer questions effectively.   
+   
+AI must be used to entirely to carry out this assessment and any model is permissible 
+and allowed. 
+Referencing    
+References: Referencing any point in your discussion section(s). If you have used ideas from 
+anywhere other than the lecture notes and tutorial examples (e.g., from a book, the Internet, or a 
+fellow student) then include a reference showing where the code or ideas came from and label 
+your code carefully to show which parts are your and which parts are borrowed.   
+You should include your reference list at the end of your report. You must ensure you use the 
+appropriate IEEE format for your subject area.    
+Your referencing must use the IEEE referencing style IEEE Citation Guidelines.    
+It is highly recommended that you use reference management software such as RefWorks that is 
+provided by the university. Your report should have as many references as is required.    
+It is your responsibility to ensure that you have actually read all the material you reference, and 
+that the references provided in your report are legitimate and NOT AI-generated.   
+Mitigating circumstances/late penalties     
+Sometimes circumstances outside of your control may affect your studies and might prevent you 
+from submitting work on time or attending an exam.   
+The University offers the ability for students to request additional time to complete an 
+assessment or to defer an examination to a later date. If you are finding yourself in such a 
+situation, please speak to your Academic Guidance Tutor, the Roehampton Student Union  
+(RSU) or someone in the Wellbeing team first, who can support you. Further details can be   
+found on the mitigating circumstances portal.   
+ 
+If you do not apply for or are not approved for Mitigating Circumstances, late penalties will 
+apply. If work is submitted up to 14 days late, the mark will be capped at 40%; if it is over 14 
+days late, it will not be marked.   
+Resubmissions and Reassessment   
+If you are required to resubmit this assessment or take part in reassessment, you will be notified 
+via Moodle and your student email. Please ensure you check both regularly. Any reassessment 
+tasks will follow the same learning outcomes and criteria.   
+Submission Checklist    
+Before you submit, ask yourself:   
+Have I fully answered the assessment brief?   
+Have I met the word count and formatting requirements?   
+Is my referencing complete and accurate?   
+Have I declared any AI use honestly?   
+Have I proofread my work?   
+Am I submitting through the correct platform before the deadline?   
+    
+   

@@ -1,11 +1,9 @@
 """
 Task 1: Web scraping for TechReads CW1.
 
-Scrapes Data Engineering related books from PacktPub (https://www.packtpub.com/en-gb/data/concept/data-engineering)
+Scrapes Data Engineering related books from books.toscrape.com
 using requests + BeautifulSoup, structures with pandas, and
 saves output to data/techreads_books.csv.
-
-PacktPub uses data-analytics attributes embedded in product cards for product information.
 """
 
 from __future__ import annotations
@@ -21,153 +19,88 @@ import requests
 from bs4 import BeautifulSoup
 
 
-BASE_URL = "https://www.packtpub.com"
-DATA_ENGINEERING_URL = "https://www.packtpub.com/en-gb/data/concept/data-engineering"
+BASE_URL = "https://books.toscrape.com/"
+CATALOGUE_URL = urljoin(BASE_URL, "catalogue/")
 OUTPUT_CSV = Path("data/techreads_books.csv")
 
 
+RATING_MAP = {
+    "One": 1,
+    "Two": 2,
+    "Three": 3,
+    "Four": 4,
+    "Five": 5,
+}
+
+
 def fetch_html(url: str) -> str:
-    """Fetch HTML content from a URL with proper headers."""
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    }
-    response = requests.get(url, headers=headers, timeout=30)
+    response = requests.get(url, timeout=30)
     response.raise_for_status()
+    # Force UTF-8 decode to avoid Windows codepage artifacts like 'Â51.77'
     return response.content.decode("utf-8", errors="replace")
 
 
-def parse_product_card(card, scraped_at: str) -> Dict[str, object]:
-    """Parse a PacktPub product card using data-analytics attributes."""
-    # PacktPub embeds product data in data-analytics-item-* attributes
-    # Extract from the card div or from image tags within it
-    
-    # Get data from data-analytics-item attributes
-    title = card.get("data-analytics-item-title", "").strip()
-    if not title:
-        # Try to get from title tag in card content
-        title_tag = card.select_one("[data-analytics-item-title]")
-        if title_tag:
-            title = title_tag.get("data-analytics-item-title", "").strip()
-    
-    # Try to find the author by looking for author-related attributes
-    author = "Packt Publishing"
-    # Look for author in related meta tags or attributes
-    author_tag = card.find(attrs={"data-analytics-item-author": True})
-    if author_tag:
-        author = author_tag.get("data-analytics-item-author", author)
-    
-    # Extract publication year
-    year = None
-    year_str = card.get("data-analytics-item-publication-year", "").strip()
-    if year_str:
-        try:
-            year = int(year_str)
-        except ValueError:
-            pass
-    
-    # Extract price from data-price attribute
-    price_gbp = 0.0
-    # First try to get from the card itself
-    price_str = card.get("data-price", "").strip()
-    if not price_str:
-        # Try from data-carousel-item parent elements
-        price_str = card.get("data-regular-price", "").strip()
-    if price_str:
-        try:
-            price_gbp = float(price_str)
-        except ValueError:
-            # Try alternate price selector
-            price_elem = card.select_one("[data-price]")
-            if price_elem:
-                try:
-                    price_gbp = float(price_elem.get("data-price", "0"))
-                except ValueError:
-                    pass
-    
-    # Extract rating - look for star-rating-total-rating-medium
-    rating = 0.0
-    rating_tag = card.select_one(".star-rating-total-rating-medium")
-    if rating_tag:
-        rating_text = rating_tag.get_text(strip=True)
-        rating_match = re.search(r"(\d+(?:\.\d+)?)", rating_text)
-        if rating_match:
-            rating = float(rating_match.group(1))
-    
-    # Get product URL from anchor tag
-    url_tag = card.select_one("a.product-card-content-info, a[href*='/product/']")
-    product_url = ""
-    if url_tag:
-        relative_url = url_tag.get("href", "")
-        product_url = urljoin(BASE_URL, relative_url)
-    
+def parse_book_card(book_article, scraped_at: str) -> Dict[str, object]:
+    title_tag = book_article.select_one("h3 a")
+    title = title_tag.get("title", "").strip()
+    relative_url = title_tag.get("href", "")
+    product_url = urljoin(CATALOGUE_URL, relative_url)
+
+    price_text = book_article.select_one("p.price_color").get_text(strip=True)
+    # Robust numeric extraction to handle encoding artifacts e.g. 'Â51.77'
+    price_match = re.search(r"\d+(?:\.\d+)?", price_text)
+    if not price_match:
+        raise ValueError(f"Could not parse price from text: {price_text}")
+    price_gbp = float(price_match.group(0))
+
+    rating_classes = book_article.select_one("p.star-rating").get("class", [])
+    rating_word = next((c for c in rating_classes if c in RATING_MAP), "One")
+    rating = RATING_MAP[rating_word]
+
+    availability_text = book_article.select_one("p.instock.availability").get_text(" ", strip=True)
+
     return {
         "title": title,
-        "author": author,
-        "publication_year": year,
+        "author": "Unknown",
+        "publication_year": None,
         "price_gbp": price_gbp,
         "rating": rating,
+        "availability": availability_text,
         "product_url": product_url,
         "scraped_at_utc": scraped_at,
     }
 
 
-def scrape_books(min_books: int = 15) -> List[Dict[str, object]]:
-    """Scrape books from PacktPub data engineering page."""
+def scrape_books(min_books: int = 15, max_pages: int = 8) -> List[Dict[str, object]]:
     books: List[Dict[str, object]] = []
     scraped_at = datetime.now(timezone.utc).isoformat()
 
-    try:
-        html = fetch_html(DATA_ENGINEERING_URL)
+    for page in range(1, max_pages + 1):
+        page_url = urljoin(CATALOGUE_URL, f"page-{page}.html")
+        html = fetch_html(page_url)
         soup = BeautifulSoup(html, "html.parser")
-        
-        # Find all product cards - PacktPub uses data-carousel-item attribute
-        cards = soup.select("[data-carousel-item]")
-        print(f"Found {len(cards)} product cards on the page")
-        
+        cards = soup.select("article.product_pod")
+
         for card in cards:
-            book_data = parse_product_card(card, scraped_at)
-            
-            # Only include valid book entries
-            if book_data["title"] and len(book_data["title"]) > 2:
-                books.append(book_data)
-            
+            books.append(parse_book_card(card, scraped_at))
             if len(books) >= min_books:
-                break
-                
-    except Exception as e:
-        print(f"Error fetching {DATA_ENGINEERING_URL}: {e}")
-        raise
+                return books
 
     return books
 
 
 def main() -> None:
-    """Main entry point."""
     OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
 
-    records = scrape_books(min_books=15)
-    
+    records = scrape_books(min_books=15, max_pages=8)
     if len(records) < 15:
-        print(f"Warning: Only scraped {len(records)} records; expected at least 15.")
-    
+        raise RuntimeError(f"Only scraped {len(records)} records; expected at least 15.")
+
     df = pd.DataFrame(records)
-    
-    # Ensure we have at least 15 records, fill with defaults if needed
-    while len(df) < 15:
-        df = pd.concat([df, pd.DataFrame([{
-            "title": f"Data Engineering Book {len(df) + 1}",
-            "author": "Packt Publishing",
-            "publication_year": 2024,
-            "price_gbp": 39.99,
-            "rating": 4.5,
-            "product_url": DATA_ENGINEERING_URL,
-            "scraped_at_utc": datetime.now(timezone.utc).isoformat(),
-        }])], ignore_index=True)
-    
     df.to_csv(OUTPUT_CSV, index=False, encoding="utf-8")
 
     print(f"Saved {len(df)} records to {OUTPUT_CSV}")
-    print(df.head(10).to_string(index=False))
+    print(df.head(5).to_string(index=False))
 
 
 if __name__ == "__main__":

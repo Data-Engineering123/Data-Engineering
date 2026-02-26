@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2026-02-12T12:00:00.000Z" agent="draw.io" version="22.1.0">
+  <diagram id="schema" name="Schema">
+    <mxGraphModel dx="1300" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="techreads_db" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="140" y="100" width="420" height="320" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="techreads_books" style="shape=table;startSize=28;container=1;" vertex="1" parent="2">
+          <mxGeometry x="20" y="50" width="380" height="240" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="id (PK) INT AUTO_INCREMENT" style="text;align=left;spacingLeft=8;" vertex="1" parent="3">
+          <mxGeometry x="0" y="30" width="380" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="title VARCHAR(255)" style="text;align=left;spacingLeft=8;" vertex="1" parent="3">
+          <mxGeometry x="0" y="55" width="380" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="author VARCHAR(255)" style="text;align=left;spacingLeft=8;" vertex="1" parent="3">
+          <mxGeometry x="0" y="80" width="380" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="publication_year INT" style="text;align=left;spacingLeft=8;" vertex="1" parent="3">
+          <mxGeometry x="0" y="105" width="380" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="price_gbp DECIMAL(10,2)" style="text;align=left;spacingLeft=8;" vertex="1" parent="3">
+          <mxGeometry x="0" y="130" width="380" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="rating TINYINT" style="text;align=left;spacingLeft=8;" vertex="1" parent="3">
+          <mxGeometry x="0" y="155" width="380" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="availability VARCHAR(120)" style="text;align=left;spacingLeft=8;" vertex="1" parent="3">
+          <mxGeometry x="0" y="180" width="380" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="product_url VARCHAR(500)" style="text;align=left;spacingLeft=8;" vertex="1" parent="3">
+          <mxGeometry x="0" y="205" width="380" height="25" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
