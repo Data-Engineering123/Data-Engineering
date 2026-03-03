@@ -1,16 +1,16 @@
 title,author,publication_year,price_gbp,rating,availability,product_url,scraped_at_utc
-A Light in the Attic,Unknown,,51.77,3,In stock,https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html,2026-02-23T22:26:43.951547+00:00
-Tipping the Velvet,Unknown,,53.74,1,In stock,https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html,2026-02-23T22:26:43.951547+00:00
-Soumission,Unknown,,50.1,1,In stock,https://books.toscrape.com/catalogue/soumission_998/index.html,2026-02-23T22:26:43.951547+00:00
-Sharp Objects,Unknown,,47.82,4,In stock,https://books.toscrape.com/catalogue/sharp-objects_997/index.html,2026-02-23T22:26:43.951547+00:00
-Sapiens: A Brief History of Humankind,Unknown,,54.23,5,In stock,https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html,2026-02-23T22:26:43.951547+00:00
-The Requiem Red,Unknown,,22.65,1,In stock,https://books.toscrape.com/catalogue/the-requiem-red_995/index.html,2026-02-23T22:26:43.951547+00:00
-The Dirty Little Secrets of Getting Your Dream Job,Unknown,,33.34,4,In stock,https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html,2026-02-23T22:26:43.951547+00:00
-"The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",Unknown,,17.93,3,In stock,https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html,2026-02-23T22:26:43.951547+00:00
-The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics,Unknown,,22.6,4,In stock,https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html,2026-02-23T22:26:43.951547+00:00
-The Black Maria,Unknown,,52.15,1,In stock,https://books.toscrape.com/catalogue/the-black-maria_991/index.html,2026-02-23T22:26:43.951547+00:00
-"Starving Hearts (Triangular Trade Trilogy, #1)",Unknown,,13.99,2,In stock,https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html,2026-02-23T22:26:43.951547+00:00
-Shakespeare's Sonnets,Unknown,,20.66,4,In stock,https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html,2026-02-23T22:26:43.951547+00:00
-Set Me Free,Unknown,,17.46,5,In stock,https://books.toscrape.com/catalogue/set-me-free_988/index.html,2026-02-23T22:26:43.951547+00:00
-Scott Pilgrim's Precious Little Life (Scott Pilgrim #1),Unknown,,52.29,5,In stock,https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html,2026-02-23T22:26:43.951547+00:00
-Rip it Up and Start Again,Unknown,,35.02,5,In stock,https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html,2026-02-23T22:26:43.951547+00:00
+Solutions Architect's Handbook,"Saurabh Shrivastava, Neelanjali Srivastav",2024,32.39,4.7,In stock,https://www.packtpub.com/en-gb/product/solutions-architects-handbook-9781835084366,2026-03-03T16:44:43.899466+00:00
+Data Engineering with Databricks Cookbook,Pulkit Chadha,2024,26.99,4.4,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-databricks-cookbook-9781837632060,2026-03-03T16:44:43.899466+00:00
+Data Engineering with AWS,Gareth Eagar,2023,28.79,4.8,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-aws-9781804613139,2026-03-03T16:44:43.899466+00:00
+Data Engineering with dbt,Roberto Zagni,2023,17.99,4.6,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-dbt-9781803241883,2026-03-03T16:44:43.899466+00:00
+Getting Started with DuckDB,"Simon Aubury, Ned Letcher",2024,29.69,5.0,In stock,https://www.packtpub.com/en-gb/product/getting-started-with-duckdb-9781803232539,2026-03-03T16:44:43.899466+00:00
+Data Engineering with Google Cloud Platform,Adi Wijaya,2022,37.79,4.5,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-google-cloud-platform-9781800565067,2026-03-03T16:44:43.899466+00:00
+Databricks Certified Associate Developer for Apache Spark Using Python,Saba Shah,2024,18.89,5.0,In stock,https://www.packtpub.com/en-gb/product/databricks-certified-associate-developer-for-apache-spark-using-python-9781804616208,2026-03-03T16:44:43.899466+00:00
+Mastering Azure Databricks for Data Engineers,ScholarNest,2026,90.99,5.0,In stock,https://www.packtpub.com/en-gb/product/mastering-azure-databricks-for-data-engineers-9781836200437,2026-03-03T16:44:43.899466+00:00
+Data Engineering with Python,Paul Crickard,2020,28.79,2.6,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-python-9781839212307,2026-03-03T16:44:43.899466+00:00
+Apache Spark 3 for Data Engineering and Analytics with Python,David Mngadi,2025,45.99,5.0,In stock,https://www.packtpub.com/en-gb/product/apache-spark-3-for-data-engineering-and-analytics-with-python-9781803244303,2026-03-03T16:44:43.899466+00:00
+Data Quality in the Age of AI,Andrew Jones,2024,40.49,2.5,In stock,https://www.packtpub.com/en-gb/product/data-quality-in-the-age-of-ai-9781835088562,2026-03-03T16:44:43.899466+00:00
+Big Data on Kubernetes,Neylson Crepalde,2024,21.59,,In stock,https://www.packtpub.com/en-gb/product/big-data-on-kubernetes-9781835468999,2026-03-03T16:44:43.899466+00:00
+Mastering Azure Databricks for Data Engineers,ScholarNest,2026,90.99,5.0,In stock,https://www.packtpub.com/en-gb/product/mastering-azure-databricks-for-data-engineers-9781836200437,2026-03-03T16:44:43.899466+00:00
+Getting Started with DuckDB,"Simon Aubury, Ned Letcher",2024,29.69,5.0,In stock,https://www.packtpub.com/en-gb/product/getting-started-with-duckdb-9781803232539,2026-03-03T16:44:43.899466+00:00
+Databricks Certified Associate Developer for Apache Spark Using Python,Saba Shah,2024,18.89,5.0,In stock,https://www.packtpub.com/en-gb/product/databricks-certified-associate-developer-for-apache-spark-using-python-9781804616208,2026-03-03T16:44:43.899466+00:00
