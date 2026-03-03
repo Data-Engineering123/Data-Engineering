@@ -36,7 +36,7 @@ def main() -> None:
             r.get("author"),
             int(r["publication_year"]) if pd.notna(r.get("publication_year")) else None,
             float(r.get("price_gbp", 0)),
-            int(r.get("rating", 0)),
+            float(r.get("rating", 0)) if pd.notna(r.get("rating")) else None,
             r.get("availability"),
             r.get("product_url"),
             r.get("scraped_at_utc"),

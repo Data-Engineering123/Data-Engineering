@@ -26,12 +26,12 @@
 ## Task 1: Web Scraping (200–250 words)
 
 ### Implementation summary
-The scraping component was developed in Python using `requests`, `BeautifulSoup`, and `pandas`. The process starts by downloading HTML pages from the selected e-commerce source and parsing each product card to extract fields such as title, price, rating, availability, and product URL. Data was then transformed into a tabular DataFrame and exported as `techreads_books.csv` for downstream pipeline stages.
+The scraping component was developed in Python using `requests`, `BeautifulSoup`, and `pandas`. The target source is the Packt Publishing data engineering catalogue at `https://www.packtpub.com/en-gb/data/concept/data-engineering`. The scraper downloads the listing page, selects all `div.product-card-content` elements, and extracts seven fields per record: `title`, `author`, `publication_year`, `price_gbp`, `rating`, `availability`, and `product_url`.
 
-The solution was designed for repeatability and maintainability. A dedicated parser function isolates field extraction logic, while a controller loop iterates through catalogue pages until the required minimum of 15 records is reached. This structure supports future extension (e.g., author and publication year from richer product pages). Data validation checks ensure required rows are present before write-out, reducing risk of empty or inconsistent datasets entering later stages.
+Because author names are not present in the listing cards, the scraper visits each individual product page to retrieve them from the `div.authors` element, applying a 0.5-second polite delay between requests. Publication year is parsed from the date metadata (e.g., "Mar 2024" → 2024), and rating is stored as a decimal (e.g., 4.7) to preserve Packt's fractional star scale. Data validation confirms at least 15 records before writing to `techreads_books.csv`.
 
 ### Rationale
-`requests` was selected for lightweight HTTP retrieval, BeautifulSoup for robust DOM parsing, and pandas for reliable data shaping/export. This combination provides a practical ETL-style extraction layer suitable for daily ingestion tasks.
+`requests` was selected for lightweight HTTP retrieval, BeautifulSoup for robust DOM parsing, and pandas for reliable data shaping/export. This combination provides a practical ETL-style extraction layer well-suited to structured product catalogues like Packt's data engineering section.
 
 ### Evidence placeholders
 - Figure 1: Script execution output

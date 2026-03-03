@@ -65,7 +65,7 @@ python src/benchmark_sql_vs_nosql.py
 
 ## Important notes
 
-- The scraper uses `books.toscrape.com` (a common educational e-commerce scraping target).
-- Task field requirement is satisfied with at least 5 fields: `title`, `price_gbp`, `rating`, `availability`, `product_url`.
-- If your tutor strictly requires `author` and `publication_year`, switch target website and extend parser accordingly.
+- The scraper targets `https://www.packtpub.com/en-gb/data/concept/data-engineering` — the official Packt data engineering catalogue.
+- Task field requirement is satisfied with 7 fields: `title`, `author`, `publication_year`, `price_gbp`, `rating`, `availability`, `product_url`.
+- Author is fetched from each individual product page; publication year is parsed from the listing card metadata.
 - Keep your IEEE references genuine and verifiable.
