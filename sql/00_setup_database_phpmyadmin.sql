@@ -56,7 +56,3 @@ SELECT
     rating
 FROM techreads_books
 ORDER BY rating DESC, price_gbp ASC;
-
--- ============================================
--- End of Setup Script
--- ============================================
