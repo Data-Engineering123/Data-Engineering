@@ -1,0 +1,16 @@
+{
+  "id": "session-1772567767543",
+  "startedAt": "2026-03-03T19:56:07.543Z",
+  "platform": "win32",
+  "cwd": "c:\\Users\\alvi9\\MyWork\\Data Engineering - Copy",
+  "context": {},
+  "metrics": {
+    "edits": 0,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "restoredAt": "2026-03-03T19:56:07.588Z",
+  "endedAt": "2026-03-03T20:36:32.886Z",
+  "duration": 2425344
+}
