@@ -7,7 +7,7 @@
     "rating":4.7,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/solutions-architects-handbook-9781835084366",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Data Engineering with Databricks Cookbook",
@@ -17,7 +17,7 @@
     "rating":4.4,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/data-engineering-with-databricks-cookbook-9781837632060",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Data Engineering with AWS",
@@ -27,7 +27,7 @@
     "rating":4.8,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/data-engineering-with-aws-9781804613139",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Data Engineering with dbt",
@@ -37,7 +37,7 @@
     "rating":4.6,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/data-engineering-with-dbt-9781803241883",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Getting Started with DuckDB",
@@ -47,7 +47,7 @@
     "rating":5.0,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/getting-started-with-duckdb-9781803232539",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Data Engineering with Google Cloud Platform",
@@ -57,7 +57,7 @@
     "rating":4.5,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/data-engineering-with-google-cloud-platform-9781800565067",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Databricks Certified Associate Developer for Apache Spark Using Python",
@@ -67,7 +67,7 @@
     "rating":5.0,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/databricks-certified-associate-developer-for-apache-spark-using-python-9781804616208",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Mastering Azure Databricks for Data Engineers",
@@ -77,17 +77,7 @@
     "rating":5.0,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/mastering-azure-databricks-for-data-engineers-9781836200437",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
-  },
-  {
-    "title":"Data Engineering with Python",
-    "author":"Paul Crickard",
-    "publication_year":2020,
-    "price_gbp":28.79,
-    "rating":2.6,
-    "availability":"In stock",
-    "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/data-engineering-with-python-9781839212307",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Apache Spark 3 for Data Engineering and Analytics with Python",
@@ -97,7 +87,17 @@
     "rating":5.0,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/apache-spark-3-for-data-engineering-and-analytics-with-python-9781803244303",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
+  },
+  {
+    "title":"Azure Data Factory Cookbook",
+    "author":"Dmitry Foshin, Dmitry Anoshin, Xenia Ireton, Tonya Chernyshova",
+    "publication_year":2024,
+    "price_gbp":29.69,
+    "rating":4.9,
+    "availability":"In stock",
+    "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/azure-data-factory-cookbook-9781803241821",
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Data Quality in the Age of AI",
@@ -107,7 +107,7 @@
     "rating":2.5,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/data-quality-in-the-age-of-ai-9781835088562",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Big Data on Kubernetes",
@@ -117,7 +117,7 @@
     "rating":null,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/big-data-on-kubernetes-9781835468999",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Mastering Azure Databricks for Data Engineers",
@@ -127,7 +127,7 @@
     "rating":5.0,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/mastering-azure-databricks-for-data-engineers-9781836200437",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Getting Started with DuckDB",
@@ -137,7 +137,7 @@
     "rating":5.0,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/getting-started-with-duckdb-9781803232539",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   },
   {
     "title":"Databricks Certified Associate Developer for Apache Spark Using Python",
@@ -147,6 +147,6 @@
     "rating":5.0,
     "availability":"In stock",
     "product_url":"https:\/\/www.packtpub.com\/en-gb\/product\/databricks-certified-associate-developer-for-apache-spark-using-python-9781804616208",
-    "scraped_at_utc":"2026-03-03T20:33:55.474941+00:00"
+    "scraped_at_utc":"2026-03-05T12:31:57.313129+00:00"
   }
 ]
