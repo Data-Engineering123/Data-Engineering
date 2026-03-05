@@ -2,7 +2,7 @@
 
 USE techreads_db;
 
-LOAD DATA LOCAL INFILE '/Users/nafisamaliat/Library/CloudStorage/OneDrive-UniversityofRoehampton/ROE/Year 3/Data Engineering/Data Engineering - Copy/data/techreads_books.csv'
+LOAD DATA LOCAL INFILE 'data/techreads_books.csv'
 INTO TABLE techreads_books
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
