@@ -1,16 +1,16 @@
 title,author,publication_year,price_gbp,rating,availability,product_url,scraped_at_utc
-Solutions Architect's Handbook,"Saurabh Shrivastava, Neelanjali Srivastav",2024,32.39,4.7,In stock,https://www.packtpub.com/en-gb/product/solutions-architects-handbook-9781835084366,2026-03-03T16:58:30.805406+00:00
-Data Engineering with Databricks Cookbook,Pulkit Chadha,2024,26.99,4.4,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-databricks-cookbook-9781837632060,2026-03-03T16:58:30.805406+00:00
-Data Engineering with AWS,Gareth Eagar,2023,28.79,4.8,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-aws-9781804613139,2026-03-03T16:58:30.805406+00:00
-Data Engineering with dbt,Roberto Zagni,2023,17.99,4.6,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-dbt-9781803241883,2026-03-03T16:58:30.805406+00:00
-Getting Started with DuckDB,"Simon Aubury, Ned Letcher",2024,29.69,5.0,In stock,https://www.packtpub.com/en-gb/product/getting-started-with-duckdb-9781803232539,2026-03-03T16:58:30.805406+00:00
-Data Engineering with Google Cloud Platform,Adi Wijaya,2022,37.79,4.5,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-google-cloud-platform-9781800565067,2026-03-03T16:58:30.805406+00:00
-Databricks Certified Associate Developer for Apache Spark Using Python,Saba Shah,2024,18.89,5.0,In stock,https://www.packtpub.com/en-gb/product/databricks-certified-associate-developer-for-apache-spark-using-python-9781804616208,2026-03-03T16:58:30.805406+00:00
-Mastering Azure Databricks for Data Engineers,ScholarNest,2026,90.99,5.0,In stock,https://www.packtpub.com/en-gb/product/mastering-azure-databricks-for-data-engineers-9781836200437,2026-03-03T16:58:30.805406+00:00
-Data Engineering with Python,Paul Crickard,2020,28.79,2.6,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-python-9781839212307,2026-03-03T16:58:30.805406+00:00
-Apache Spark 3 for Data Engineering and Analytics with Python,David Mngadi,2025,45.99,5.0,In stock,https://www.packtpub.com/en-gb/product/apache-spark-3-for-data-engineering-and-analytics-with-python-9781803244303,2026-03-03T16:58:30.805406+00:00
-Data Quality in the Age of AI,Andrew Jones,2024,40.49,2.5,In stock,https://www.packtpub.com/en-gb/product/data-quality-in-the-age-of-ai-9781835088562,2026-03-03T16:58:30.805406+00:00
-Big Data on Kubernetes,Neylson Crepalde,2024,21.59,,In stock,https://www.packtpub.com/en-gb/product/big-data-on-kubernetes-9781835468999,2026-03-03T16:58:30.805406+00:00
-Mastering Azure Databricks for Data Engineers,ScholarNest,2026,90.99,5.0,In stock,https://www.packtpub.com/en-gb/product/mastering-azure-databricks-for-data-engineers-9781836200437,2026-03-03T16:58:30.805406+00:00
-Getting Started with DuckDB,"Simon Aubury, Ned Letcher",2024,29.69,5.0,In stock,https://www.packtpub.com/en-gb/product/getting-started-with-duckdb-9781803232539,2026-03-03T16:58:30.805406+00:00
-Databricks Certified Associate Developer for Apache Spark Using Python,Saba Shah,2024,18.89,5.0,In stock,https://www.packtpub.com/en-gb/product/databricks-certified-associate-developer-for-apache-spark-using-python-9781804616208,2026-03-03T16:58:30.805406+00:00
+Solutions Architect's Handbook,"Saurabh Shrivastava, Neelanjali Srivastav",2024,32.39,4.7,In stock,https://www.packtpub.com/en-gb/product/solutions-architects-handbook-9781835084366,2026-03-05T12:31:57.313129+00:00
+Data Engineering with Databricks Cookbook,Pulkit Chadha,2024,26.99,4.4,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-databricks-cookbook-9781837632060,2026-03-05T12:31:57.313129+00:00
+Data Engineering with AWS,Gareth Eagar,2023,28.79,4.8,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-aws-9781804613139,2026-03-05T12:31:57.313129+00:00
+Data Engineering with dbt,Roberto Zagni,2023,17.99,4.6,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-dbt-9781803241883,2026-03-05T12:31:57.313129+00:00
+Getting Started with DuckDB,"Simon Aubury, Ned Letcher",2024,29.69,5.0,In stock,https://www.packtpub.com/en-gb/product/getting-started-with-duckdb-9781803232539,2026-03-05T12:31:57.313129+00:00
+Data Engineering with Google Cloud Platform,Adi Wijaya,2022,37.79,4.5,In stock,https://www.packtpub.com/en-gb/product/data-engineering-with-google-cloud-platform-9781800565067,2026-03-05T12:31:57.313129+00:00
+Databricks Certified Associate Developer for Apache Spark Using Python,Saba Shah,2024,18.89,5.0,In stock,https://www.packtpub.com/en-gb/product/databricks-certified-associate-developer-for-apache-spark-using-python-9781804616208,2026-03-05T12:31:57.313129+00:00
+Mastering Azure Databricks for Data Engineers,ScholarNest,2026,90.99,5.0,In stock,https://www.packtpub.com/en-gb/product/mastering-azure-databricks-for-data-engineers-9781836200437,2026-03-05T12:31:57.313129+00:00
+Apache Spark 3 for Data Engineering and Analytics with Python,David Mngadi,2025,45.99,5.0,In stock,https://www.packtpub.com/en-gb/product/apache-spark-3-for-data-engineering-and-analytics-with-python-9781803244303,2026-03-05T12:31:57.313129+00:00
+Azure Data Factory Cookbook,"Dmitry Foshin, Dmitry Anoshin, Xenia Ireton, Tonya Chernyshova",2024,29.69,4.9,In stock,https://www.packtpub.com/en-gb/product/azure-data-factory-cookbook-9781803241821,2026-03-05T12:31:57.313129+00:00
+Data Quality in the Age of AI,Andrew Jones,2024,40.49,2.5,In stock,https://www.packtpub.com/en-gb/product/data-quality-in-the-age-of-ai-9781835088562,2026-03-05T12:31:57.313129+00:00
+Big Data on Kubernetes,Neylson Crepalde,2024,21.59,,In stock,https://www.packtpub.com/en-gb/product/big-data-on-kubernetes-9781835468999,2026-03-05T12:31:57.313129+00:00
+Mastering Azure Databricks for Data Engineers,ScholarNest,2026,90.99,5.0,In stock,https://www.packtpub.com/en-gb/product/mastering-azure-databricks-for-data-engineers-9781836200437,2026-03-05T12:31:57.313129+00:00
+Getting Started with DuckDB,"Simon Aubury, Ned Letcher",2024,29.69,5.0,In stock,https://www.packtpub.com/en-gb/product/getting-started-with-duckdb-9781803232539,2026-03-05T12:31:57.313129+00:00
+Databricks Certified Associate Developer for Apache Spark Using Python,Saba Shah,2024,18.89,5.0,In stock,https://www.packtpub.com/en-gb/product/databricks-certified-associate-developer-for-apache-spark-using-python-9781804616208,2026-03-05T12:31:57.313129+00:00
